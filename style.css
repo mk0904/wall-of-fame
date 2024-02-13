@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+body {
+    font-family: 'Poppins';
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+video {
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-100;
+  }
+
+.hero-salute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.hero-salute h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+img{
+    border-radius: 5px;
+}
+
+#tricolor-salute {
+    width: 7em;
+    height: 5em;
+    padding: 0px 10px;
+    transform: rotate(-20deg);
+}
+
+.wall-of-fame-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.hero {
+    flex: 1 0 calc(10% - 10px);
+
+    padding: 10px 2px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero:hover{
+    transform: scale(1.2);
+    transition: all 200ms ease-in;
+    background-color: rgb(38, 38, 38);
+}
+.rank{
+    color:slategrey;
+    margin: 0;
+    font-size: 0.6em;
+    font-weight: 100;
+}
+.hero h1{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: gold;
+    margin: 0;
+}
+
+.batalion{
+    color: grey;
+    font-size: 16px;
+}
+
+/* ____________________________________________________________________ */
+/* fadeInAnimation */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* 
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
