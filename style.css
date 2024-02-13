@@ -11,10 +11,13 @@ video {
     position: absolute;
     opacity: 0.3;
     top: 0;
+    position: absolute;
     left: 0;
     min-width: 100%;
     min-height: 100%;
     z-index:-100;
+    max-width: 100%;
+    
   }
 
 .hero-salute {
@@ -42,6 +45,10 @@ img{
     transform: rotate(-20deg);
 }
 
+#audio-file {
+    display: none;
+}
+
 .wall-of-fame-flex {
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +65,7 @@ img{
 .hero:hover{
     transform: scale(1.2);
     transition: all 200ms ease-in;
-    background-color: rgb(38, 38, 38);
+    background-color: rgba(0, 0, 0, 0);
 }
 .rank{
     color:slategrey;

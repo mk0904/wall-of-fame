@@ -1,0 +1,1 @@
+console.log("JavaScript".substring(7, 4))
